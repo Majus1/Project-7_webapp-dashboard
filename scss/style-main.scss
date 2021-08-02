@@ -1,6 +1,7 @@
 // Variables
 // The variables will be imported first
 
+
 // Color variables 
 $blink_white: #ffffff;
 $blink_platinum: #E6E6E6;
@@ -11,6 +12,7 @@ $blink_quick-silver: #A2A2A2;
 $blink_onxy: #424242;
 $blink_jet: #2F2F2F;
 $blink_black: #000000;
+
 
 // Type variables
 h1 {
@@ -86,7 +88,80 @@ p .overline {
     letter-spacing: 1.5px;
     font-weight: 400;
 }
+
+
+// Base layout
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+}
+
+header {
+    // Sets up the header layour
+    background-color: $blink_rich-black;
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        #user-info-block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: auto;
+            #notifications {
+                width: 20px;
+            }
+            #profile-image {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+
 // Base style
 * {
     font-family: serif;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+#home,
+#charts,
+#members,
+#settings {
+    width: 35px;
+}
+
+#sidebar {
+    background-color: $blink_deep-space-sparkle;
+}
+
+#student-name {
+    color: $blink_platinum;
+    margin: 0 15px 0 5px;
+}
+
+#profile-image {
+    border-radius: 100px;
+    margin: 0 5px 0 12px;
+}
+
+#notifications {
+    fill: $blink_platinum;
+    border-right: 0.2px solid $blink_platinum;
+    padding: 0 12px;
+}
+
+#logo {
+    color: $blink_platinum;
+    font-weight: 400;
+    margin-left: 1rem;
 }

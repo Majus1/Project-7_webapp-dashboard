@@ -83,7 +83,95 @@ p .overline {
   font-weight: 400;
 }
 
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  background-color: silver;
+}
+
+header {
+  background-color: #002F2F;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header nav #user-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+header nav #user-info-block #notifications {
+  width: 20px;
+}
+
+header nav #user-info-block #profile-image {
+  width: 30px;
+  height: 30px;
+}
+
 * {
   font-family: serif;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+#home,
+#charts,
+#members,
+#settings {
+  width: 35px;
+}
+
+#sidebar {
+  background-color: #516969;
+}
+
+#student-name {
+  color: #E6E6E6;
+  margin: 0 15px 0 5px;
+}
+
+#profile-image {
+  border-radius: 100px;
+  margin: 0 5px 0 12px;
+}
+
+#notifications {
+  fill: #E6E6E6;
+  border-right: 0.2px solid #E6E6E6;
+  padding: 0 12px;
+}
+
+#logo {
+  color: #E6E6E6;
+  font-weight: 400;
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style-main.css.map */
