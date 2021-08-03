@@ -109,6 +109,7 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding: 1rem 0;
 }
 
 header nav #user-info-block {
@@ -138,19 +139,27 @@ header nav #user-info-block #profile-image {
   font-family: serif;
 }
 
-nav {
-  padding: 10px 0;
-}
-
-#home,
-#charts,
-#members,
-#settings {
-  width: 35px;
-}
-
 #sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #516969;
+}
+
+#sidebar #home,
+#sidebar #charts,
+#sidebar #members,
+#sidebar #settings {
+  width: 35px;
+  height: 35px;
+  margin: 0.45rem 0.7rem;
 }
 
 #student-name {
@@ -173,5 +182,11 @@ nav {
   color: #E6E6E6;
   font-weight: 400;
   margin-left: 1rem;
+}
+
+@media (min-width: 320px) {
+  * {
+    background-color: red;
+  }
 }
 /*# sourceMappingURL=style-main.css.map */

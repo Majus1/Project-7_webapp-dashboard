@@ -107,6 +107,7 @@ header {
         flex-direction: row;
         align-items: center;
         width: 100%;
+        padding: 1rem 0;
         #user-info-block {
             display: flex;
             flex-direction: row;
@@ -129,20 +130,21 @@ header {
     font-family: serif;
 }
 
-nav {
-    padding: 10px 0;
-}
-
-#home,
-#charts,
-#members,
-#settings {
-    width: 35px;
-}
-
 #sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: $blink_deep-space-sparkle;
+    #home,
+    #charts,
+    #members,
+    #settings {
+        width: 35px;
+        height: 35px;
+        margin: 0.45rem 0.7rem;
+    }
 }
+
 
 #student-name {
     color: $blink_platinum;
@@ -164,4 +166,12 @@ nav {
     color: $blink_platinum;
     font-weight: 400;
     margin-left: 1rem;
+}
+
+
+// Media queries
+@media (min-width: 320px) {
+    * {
+        background-color: red;
+    }
 }
