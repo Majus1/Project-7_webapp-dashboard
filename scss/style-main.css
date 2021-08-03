@@ -197,7 +197,7 @@ header nav #user-info-block #profile-image {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #E6E6E6;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -241,5 +241,29 @@ main {
   color: #E6E6E6;
   font-weight: 400;
   margin-left: 1rem;
+}
+
+#dash-tab-bar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(120px, 0.5fr) 1fr 1fr 1fr;
+      grid-template-columns: minmax(120px, 0.5fr) 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #A2A2A2;
+}
+
+#dash-tab-bar #dashboard-tab {
+  background-color: #E6E6E6;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: center;
+  padding: 20px;
+  border-top: solid 2px #424242;
 }
 /*# sourceMappingURL=style-main.css.map */

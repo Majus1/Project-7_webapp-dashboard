@@ -161,7 +161,7 @@ header {
 }
 
 main {
-    background-color: $blink_white;
+    background-color: $blink_platinum;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -200,4 +200,21 @@ main {
     color: $blink_platinum;
     font-weight: 400;
     margin-left: 1rem;
+}
+
+#dash-tab-bar {
+    // Sets up the dash bar layout
+    display: grid;
+    grid-template-columns: minmax(120px, 0.5fr) 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: $blink_quick-silver;
+    #dashboard-tab {
+        background-color: $blink_platinum;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+        padding: 20px;
+        border-top: solid 2px $blink_onxy;
+    }
 }
