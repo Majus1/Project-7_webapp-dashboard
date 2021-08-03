@@ -93,15 +93,19 @@ p .overline {
 // Base layout
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 62px 60px 1fr;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: silver;
 }
 
 header {
-    // Sets up the header layour
+    // Sets up the header layout
     background-color: $blink_rich-black;
+    grid-column-start: 1;
+    grid-column-end: 3;
     nav {
         display: flex;
         flex-direction: row;
@@ -122,19 +126,23 @@ header {
             }
         }
     }
-}
-
-
-// Base style
-* {
-    font-family: serif;
+    @media (min-width: 768px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 
 #sidebar {
+    // Sets up the sidebar layout
+    background-color: $blink_deep-space-sparkle;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: $blink_deep-space-sparkle;
+    align-items: center;
     #home,
     #charts,
     #members,
@@ -143,8 +151,34 @@ header {
         height: 35px;
         margin: 0.45rem 0.7rem;
     }
+    @media (min-width: 768px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        flex-direction: column;
+    }
 }
 
+main {
+    background-color: $blink_white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    @media (min-width: 768px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+}
+
+
+// Base style
+* {
+    font-family: serif;
+}
 
 #student-name {
     color: $blink_platinum;
@@ -166,12 +200,4 @@ header {
     color: $blink_platinum;
     font-weight: 400;
     margin-left: 1rem;
-}
-
-
-// Media queries
-@media (min-width: 320px) {
-    * {
-        background-color: red;
-    }
 }

@@ -86,8 +86,11 @@ p .overline {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: 70px 1fr;
+      grid-template-columns: 70px 1fr;
+  -ms-grid-rows: 62px 60px 1fr;
+      grid-template-rows: 62px 60px 1fr;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: silver;
@@ -95,6 +98,9 @@ p .overline {
 
 header {
   background-color: #002F2F;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 header nav {
@@ -135,11 +141,22 @@ header nav #user-info-block #profile-image {
   height: 30px;
 }
 
-* {
-  font-family: serif;
+@media (min-width: 768px) {
+  header {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 #sidebar {
+  background-color: #516969;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +167,9 @@ header nav #user-info-block #profile-image {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #516969;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #sidebar #home,
@@ -160,6 +179,46 @@ header nav #user-info-block #profile-image {
   width: 35px;
   height: 35px;
   margin: 0.45rem 0.7rem;
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main {
+  background-color: #ffffff;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+@media (min-width: 768px) {
+  main {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 5;
+  }
+}
+
+* {
+  font-family: serif;
 }
 
 #student-name {
@@ -182,11 +241,5 @@ header nav #user-info-block #profile-image {
   color: #E6E6E6;
   font-weight: 400;
   margin-left: 1rem;
-}
-
-@media (min-width: 320px) {
-  * {
-    background-color: red;
-  }
 }
 /*# sourceMappingURL=style-main.css.map */
