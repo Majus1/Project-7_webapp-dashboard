@@ -123,6 +123,10 @@ header {
             flex-direction: row;
             align-items: center;
             margin-left: auto;
+            hr {
+                width: 20px;
+                transform: rotate(90deg);
+            }
             #notifications {
                 width: 20px;
             }
@@ -193,13 +197,28 @@ main {
 
 #profile-image {
     border-radius: 100px;
-    margin: 0 5px 0 12px;
+    margin: 0 5px 0;
 }
 
 #notifications {
     fill: $blink_platinum;
-    border-right: 0.2px solid $blink_platinum;
-    padding: 0 12px;
+    padding: 4px;
+    :hover {
+        @keyframes wiggle {
+            30% {
+              transform: rotate(25deg);
+            }
+            50% {
+              transform: rotate(0);
+            }
+            70% {
+              transform: rotate(25deg);
+            }
+        }
+        animation: wiggle 1s;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
 }
 
 #logo {
@@ -211,7 +230,7 @@ main {
 #dash-tab-bar {
     // Sets up the dash bar layout
     display: grid;
-    grid-template-columns: minmax(120px, 0.25fr) 1fr;
+    grid-template-columns: minmax(120px, 0.20fr) 1fr;
     align-items: center;
     justify-content: center;
     background-color: $blink_onxy;
@@ -233,6 +252,7 @@ main {
 }
 
 #alert-notification-bar {
+    // Sets up the notification bar
     background-color: $blink_deep-space-sparkle;
     color: $blink_white;
     display: flex;

@@ -139,6 +139,12 @@ header nav #user-info-block {
   margin-left: auto;
 }
 
+header nav #user-info-block hr {
+  width: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 header nav #user-info-block #notifications {
   width: 20px;
 }
@@ -235,13 +241,50 @@ main {
 
 #profile-image {
   border-radius: 100px;
-  margin: 0 5px 0 12px;
+  margin: 0 5px 0;
 }
 
 #notifications {
   fill: #E6E6E6;
-  border-right: 0.2px solid #E6E6E6;
-  padding: 0 12px;
+  padding: 4px;
+}
+
+#notifications :hover {
+  -webkit-animation: wiggle 1s;
+          animation: wiggle 1s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes wiggle {
+  30% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  70% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
+@keyframes wiggle {
+  30% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  70% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
 }
 
 #logo {
@@ -253,8 +296,8 @@ main {
 #dash-tab-bar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(120px, 0.25fr) 1fr;
-      grid-template-columns: minmax(120px, 0.25fr) 1fr;
+  -ms-grid-columns: minmax(120px, 0.2fr) 1fr;
+      grid-template-columns: minmax(120px, 0.2fr) 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
