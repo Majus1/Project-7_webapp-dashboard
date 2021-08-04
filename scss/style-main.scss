@@ -208,21 +208,20 @@ main {
     grid-template-columns: minmax(120px, 0.25fr) 1fr;
     align-items: center;
     justify-content: center;
-    background-color: $blink_quick-silver;
+    background-color: $blink_jet;
     #dashboard-tab {
         background-color: $blink_platinum;
         grid-column-start: 1;
         grid-column-end: 2;
         text-align: center;
-        border-top: solid 2px $blink_white;
+        border-top: solid 2px $blink_quick-silver;
         padding: 20px;
     }
     #empty-tab-bar {
-        background-color: $blink_quick-silver;
         grid-column-start: 2;
         grid-column-end: 3;
-        border-left: solid 2px $blink_white;
-        border-bottom: solid 2px $blink_white;
+        border-left: solid 2px $blink_quick-silver;
+        border-bottom: solid 2px $blink_quick-silver;
         padding: 27px 10px;
     }
 }
