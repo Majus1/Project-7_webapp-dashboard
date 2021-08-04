@@ -254,7 +254,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #2F2F2F;
+  background-color: #424242;
 }
 
 #dash-tab-bar #dashboard-tab {
