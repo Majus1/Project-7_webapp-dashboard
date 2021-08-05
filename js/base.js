@@ -10,14 +10,14 @@ alertCancleButton.addEventListener("click", ()=> {
 // THE GRAPHS
 
 // Web Traffic graph
-var ctx = document.getElementById('myChart');
+var ctx = document.getElementById('dailyTrafic');
 var myChart = new Chart(ctx, {
     type: "bar",
     data: {
         labels: ['S', 'M', 'T', 'W', 'T', 'F', "S"],
 
         datasets: [{
-            label: 'none',
+            label: 'Number of visitors to website',
             data: [60, 120, 175, 125, 225, 200, 100],
             backgroundColor: [
                 'rgba(0, 47, 47)'
@@ -32,4 +32,53 @@ var myChart = new Chart(ctx, {
             }
         }
     }
+});
+
+var ctx = document.getElementById('webTraffic');
+var myChart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: ['S', 'M', 'T', 'W', 'T', 'F', "S"],
+
+        datasets: [{
+            label: 'Number of visitors to website',
+            data: [60, 120, 175, 125, 225, 200, 100],
+            backgroundColor: [
+                'red'
+            ]
+        }]
+
+    },
+    options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: (ctx) => 'Chart.js Line Chart - stacked=' + ctx.chart.options.scales.y.stacked
+          },
+          tooltip: {
+            mode: 'index'
+          },
+        },
+        interaction: {
+          mode: 'nearest',
+          axis: 'x',
+          intersect: false
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Month'
+            }
+          },
+          y: {
+            stacked: true,
+            title: {
+              display: true,
+              text: 'Value'
+            }
+          }
+        }
+      }
 });

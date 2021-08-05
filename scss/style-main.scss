@@ -268,3 +268,12 @@ main {
         margin-left: auto;
     }
 }
+
+#daily-traffic {
+    border-top: solid 1px $blink_quick-silver;
+    border-bottom: solid 1px $blink_quick-silver;
+    padding: 1rem;
+    h6 {
+        margin: 0.5rem 0;
+    }
+}

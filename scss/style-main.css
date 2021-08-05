@@ -346,4 +346,14 @@ main {
 #alert-notification-bar #alert-cancle-button {
   margin-left: auto;
 }
+
+#daily-traffic {
+  border-top: solid 1px #A2A2A2;
+  border-bottom: solid 1px #A2A2A2;
+  padding: 1rem;
+}
+
+#daily-traffic h6 {
+  margin: 0.5rem 0;
+}
 /*# sourceMappingURL=style-main.css.map */
