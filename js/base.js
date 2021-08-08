@@ -74,3 +74,9 @@ var webTrafficChart = new Chart(chartCanvas2, {
         }
     }
 });
+
+// ::::: The daily traffic graph tabs :::::
+const hourylTab = document.querySelector("#hourly-tab").focus();
+const dailylTab = document.querySelector("#daily-tab");
+const weeklylTab = document.querySelector("#weekly-tab");
+const monthlylTab = document.querySelector("#monthly-tab");

@@ -277,6 +277,7 @@ main {
     }
 }
 #web-traffic {
+    // Sets up the chronological tab bar
     border-bottom: solid 1px $blink_quick-silver;
     padding: 1rem;
     h6 {
@@ -287,10 +288,11 @@ main {
         flex-direction: row;
         gap: .7rem;
         padding: .5rem 0;
-        a {
+        input {
             background-color: rgba(0, 47, 47, 0.25);
             color: $blink_white;
             border-radius: 0.5rem;
+            border: none;
             font-family: 'Roboto', sans-serif;
             font-size: 0.875rem;
             letter-spacing: 1.25px;
@@ -299,4 +301,11 @@ main {
             padding: 10px;
         }
     }
+    #hourly-tab:focus,
+    #daily-tab:focus,
+    #weekly-tab:focus,
+    #monthly-tab:focus {
+        background-color: $blink_deep-space-sparkle;
+    }
 }
+

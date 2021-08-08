@@ -377,15 +377,23 @@ main {
   padding: .5rem 0;
 }
 
-#web-traffic nav a {
+#web-traffic nav input {
   background-color: rgba(0, 47, 47, 0.25);
   color: #ffffff;
   border-radius: 0.5rem;
+  border: none;
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   letter-spacing: 1.25px;
   font-weight: 400;
   display: block;
   padding: 10px;
+}
+
+#web-traffic #hourly-tab:focus,
+#web-traffic #daily-tab:focus,
+#web-traffic #weekly-tab:focus,
+#web-traffic #monthly-tab:focus {
+  background-color: #516969;
 }
 /*# sourceMappingURL=style-main.css.map */
