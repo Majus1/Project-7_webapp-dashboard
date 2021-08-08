@@ -7,7 +7,11 @@ alertCancleButton.addEventListener("click", ()=> {
     alertNotificationBar.style.display="none";
 });
 
+
+
 // THE GRAPHS
+
+
 
 // ::::: Daily Traffic graph :::::
 var ctx = document.getElementById('dailyTrafic');
@@ -39,6 +43,7 @@ var dailyTraficChart = new Chart(ctx, {
         }
     }
 });
+
 
 // ::::: Web Traffic graph :::::
 var chartCanvas2 = document.querySelector("#webTraffic");
