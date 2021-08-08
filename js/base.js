@@ -76,7 +76,17 @@ var webTrafficChart = new Chart(chartCanvas2, {
 });
 
 // ::::: The daily traffic graph tabs :::::
-const hourylTab = document.querySelector("#hourly-tab").focus();
+const hourylTab = document.querySelector("#hourly-tab");
 const dailylTab = document.querySelector("#daily-tab");
 const weeklylTab = document.querySelector("#weekly-tab");
 const monthlylTab = document.querySelector("#monthly-tab");
+hourylTab.focus();
+
+hourylTab.addEventListener("click", () => {
+    let currentDisplayedGraph = document.getElementById("web-traffic");
+    console.log(currentDisplayedGraph);
+
+    // You will create 3 additional graphs add a function that removes the curent graph
+    // and adds the a new graph coresponding with the graph that was of witch the button was clicked.
+});
+
