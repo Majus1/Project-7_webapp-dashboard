@@ -270,10 +270,33 @@ main {
 }
 
 #daily-traffic {
-    border-top: solid 1px $blink_quick-silver;
     border-bottom: solid 1px $blink_quick-silver;
     padding: 1rem;
     h6 {
         margin: 0.5rem 0;
+    }
+}
+#web-traffic {
+    border-bottom: solid 1px $blink_quick-silver;
+    padding: 1rem;
+    h6 {
+        margin: 0.5rem 0;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: .7rem;
+        padding: .5rem 0;
+        a {
+            background-color: rgba(0, 47, 47, 0.25);
+            color: $blink_white;
+            border-radius: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.875rem;
+            letter-spacing: 1.25px;
+            font-weight: 400;
+            display: block;
+            padding: 10px;
+        }
     }
 }

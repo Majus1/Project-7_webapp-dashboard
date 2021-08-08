@@ -348,12 +348,44 @@ main {
 }
 
 #daily-traffic {
-  border-top: solid 1px #A2A2A2;
   border-bottom: solid 1px #A2A2A2;
   padding: 1rem;
 }
 
 #daily-traffic h6 {
   margin: 0.5rem 0;
+}
+
+#web-traffic {
+  border-bottom: solid 1px #A2A2A2;
+  padding: 1rem;
+}
+
+#web-traffic h6 {
+  margin: 0.5rem 0;
+}
+
+#web-traffic nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: .7rem;
+  padding: .5rem 0;
+}
+
+#web-traffic nav a {
+  background-color: rgba(0, 47, 47, 0.25);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 1.25px;
+  font-weight: 400;
+  display: block;
+  padding: 10px;
 }
 /*# sourceMappingURL=style-main.css.map */

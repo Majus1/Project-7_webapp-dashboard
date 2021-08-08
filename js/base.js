@@ -9,9 +9,9 @@ alertCancleButton.addEventListener("click", ()=> {
 
 // THE GRAPHS
 
-// Web Traffic graph
+// ::::: Daily Traffic graph :::::
 var ctx = document.getElementById('dailyTrafic');
-var myChart = new Chart(ctx, {
+var dailyTraficChart = new Chart(ctx, {
     type: "bar",
     data: {
         labels: ['S', 'M', 'T', 'W', 'T', 'F', "S"],
@@ -30,55 +30,42 @@ var myChart = new Chart(ctx, {
             y: {
                 beginAtZero: true
             }
+        },
+        plugins: {
+            legend: {
+                display: false
+            }
+            
         }
     }
 });
 
-var ctx = document.getElementById('webTraffic');
-var myChart = new Chart(ctx, {
+// ::::: Web Traffic graph :::::
+var chartCanvas2 = document.querySelector("#webTraffic");
+var webTrafficChart = new Chart(chartCanvas2, {
     type: "line",
     data: {
-        labels: ['S', 'M', 'T', 'W', 'T', 'F', "S"],
+        labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', "27-3", "4-10", "11-17", "18-24", "25-31"],
 
         datasets: [{
-            label: 'Number of visitors to website',
-            data: [60, 120, 175, 125, 225, 200, 100],
-            backgroundColor: [
-                'red'
-            ]
-        }]
-
+            label: "Houryl",
+            data : [600, 1200, 1750, 1250, 2250, 2000, 1000, 2000, 1000, 2600, 1300],
+            backgroundColor:['rgba(0, 47, 47, 0.7)'],
+            borderColor: "rgba(0, 47, 47, 0.7)",
+            fill: true
+        }
+    ]
     },
     options: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: true,
-            text: (ctx) => 'Chart.js Line Chart - stacked=' + ctx.chart.options.scales.y.stacked
-          },
-          tooltip: {
-            mode: 'index'
-          },
-        },
-        interaction: {
-          mode: 'nearest',
-          axis: 'x',
-          intersect: false
-        },
         scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Month'
+            y: {
+                beginAtZero: true
             }
-          },
-          y: {
-            stacked: true,
-            title: {
-              display: true,
-              text: 'Value'
+        },
+        plugins: {
+            legend: {
+                display: false
             }
-          }
         }
-      }
+    }
 });
