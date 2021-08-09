@@ -307,5 +307,10 @@ main {
     #monthly-tab:focus {
         background-color: $blink_deep-space-sparkle;
     }
+    #chronological-tab-bar > input:active {
+        // Selects all the children elments of the chronological-tab-bar.
+        // The elements mus be input thoug.
+        background-color: $blink_medium-aqua-marine;
+    }
 }
 
