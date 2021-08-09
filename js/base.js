@@ -106,6 +106,69 @@ function createDailyTrafficGraph() {
     });
 };
 
+// ::::: GENERATE Web Traffic graph 3 fnction :::::
+function createWeeklyTrafficGraph() {
+    var chartCanvas2 = document.querySelector("#weeklyTraffic");
+    var webTrafficChart = new Chart(chartCanvas2, {
+        type: "line",
+        data: {
+            labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', "27-3", "4-10", "11-17", "18-24", "25-31"],
+
+            datasets: [{
+                label: "Houryl",
+                data : [2165, 1764, 2688, 942, 1598, 611, 730, 2542, 1000, 1299, 2150],
+                backgroundColor:['rgba(0, 47, 47, 0.7)'],
+                borderColor: "rgba(0, 47, 47, 0.7)",
+                fill: true
+            }
+        ]
+        },
+        options: { 
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+};
+
+// ::::: GENERATE Web Traffic graph 4 fnction :::::
+function createMonthlyTrafficGraph() {
+    var chartCanvas2 = document.querySelector("#monthlyTraffic");
+    var webTrafficChart = new Chart(chartCanvas2, {
+        type: "line",
+        data: {
+            labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', "27-3", "4-10", "11-17", "18-24", "25-31"],
+
+            datasets: [{
+                label: "Houryl",
+                data : [1190, 224, 875, 2135, 2483, 757, 730, 1201, 2392, 1040, 21040150],
+                backgroundColor:['rgba(0, 47, 47, 0.7)'],
+                borderColor: "rgba(0, 47, 47, 0.7)",
+                fill: true
+            }
+        ]
+        },
+        options: { 
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+};
 
 // ::::: The daily traffic graph tabs :::::
 const hourylTab = document.querySelector("#hourly-tab");
@@ -115,6 +178,13 @@ const monthlylTab = document.querySelector("#monthly-tab");
 hourylTab.focus();
 
 dailylTab.addEventListener("click", () => {
+    /*
+    // ::::: GENERATE Web Traffic graph 2 fnction :::::
+
+    • When clicked on a tab it will display its coresponding graph.
+    • It will do so by removing the curent graph in #graph-container.
+    • And adding a new one.
+    */
     let graphContainer = document.querySelector("#graph-container");
     graphContainer.lastElementChild.remove()
     graphContainer.innerHTML=`<canvas id="dailyTraffic" class="graph" width="400" height="200"></canvas>`;
