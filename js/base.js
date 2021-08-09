@@ -44,9 +44,8 @@ var dailyTraficChart = new Chart(ctx, {
     }
 });
 
-
-// ::::: Web Traffic graph :::::
-var chartCanvas2 = document.querySelector("#webTraffic");
+// ::::: Web Traffic graph 1 :::::
+var chartCanvas2 = document.querySelector("#hourlyTraffic");
 var webTrafficChart = new Chart(chartCanvas2, {
     type: "line",
     data: {
@@ -54,7 +53,7 @@ var webTrafficChart = new Chart(chartCanvas2, {
 
         datasets: [{
             label: "Houryl",
-            data : [600, 1200, 1750, 1250, 2250, 2000, 1000, 2000, 1000, 2600, 1300],
+            data : [1808, 912, 2413, 1272, 268, 1070, 2688, 2211, 1000, 1098, 424],
             backgroundColor:['rgba(0, 47, 47, 0.7)'],
             borderColor: "rgba(0, 47, 47, 0.7)",
             fill: true
@@ -75,6 +74,39 @@ var webTrafficChart = new Chart(chartCanvas2, {
     }
 });
 
+// ::::: GENERATE Web Traffic graph 2 fnction :::::
+function createDailyTrafficGraph() {
+    var chartCanvas2 = document.querySelector("#dailyTraffic");
+    var webTrafficChart = new Chart(chartCanvas2, {
+        type: "line",
+        data: {
+            labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', "27-3", "4-10", "11-17", "18-24", "25-31"],
+
+            datasets: [{
+                label: "Houryl",
+                data : [600, 1200, 1750, 1250, 2250, 2000, 1000, 2000, 1000, 2600, 1300],
+                backgroundColor:['rgba(0, 47, 47, 0.7)'],
+                borderColor: "rgba(0, 47, 47, 0.7)",
+                fill: true
+            }
+        ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+};
+
+
 // ::::: The daily traffic graph tabs :::::
 const hourylTab = document.querySelector("#hourly-tab");
 const dailylTab = document.querySelector("#daily-tab");
@@ -82,12 +114,11 @@ const weeklylTab = document.querySelector("#weekly-tab");
 const monthlylTab = document.querySelector("#monthly-tab");
 hourylTab.focus();
 
-hourylTab.addEventListener("click", () => {
-    let graphContainer = document.querySelector("#web-traffic");
-    let actualGraph = graphContainer.lastElementChild;
-    actualGraph.remove();
-
-    graphContainer.lastElementChild.innerHTML="Dajmo ruke v zrak";
+dailylTab.addEventListener("click", () => {
+    let graphContainer = document.querySelector("#graph-container");
+    graphContainer.lastElementChild.remove()
+    graphContainer.innerHTML=`<canvas id="dailyTraffic" class="graph" width="400" height="200"></canvas>`;
+    createDailyTrafficGraph();
     
     // You will create 3 additional graphs add a function that removes the curent graph
     // and adds the a new graph coresponding with the graph that was of witch the button was clicked.
