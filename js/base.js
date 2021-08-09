@@ -84,9 +84,11 @@ hourylTab.focus();
 
 hourylTab.addEventListener("click", () => {
     let graphContainer = document.querySelector("#web-traffic");
+    let actualGraph = graphContainer.lastElementChild;
+    actualGraph.remove();
 
-    graphContainer.removeChild(graphContainer.lastElementChild)
-
+    graphContainer.lastElementChild.innerHTML="Dajmo ruke v zrak";
+    
     // You will create 3 additional graphs add a function that removes the curent graph
     // and adds the a new graph coresponding with the graph that was of witch the button was clicked.
 });
