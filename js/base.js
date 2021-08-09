@@ -83,8 +83,9 @@ const monthlylTab = document.querySelector("#monthly-tab");
 hourylTab.focus();
 
 hourylTab.addEventListener("click", () => {
-    let currentDisplayedGraph = document.getElementById("web-traffic");
-    console.log(currentDisplayedGraph);
+    let graphContainer = document.querySelector("#web-traffic");
+
+    graphContainer.removeChild(graphContainer.lastElementChild)
 
     // You will create 3 additional graphs add a function that removes the curent graph
     // and adds the a new graph coresponding with the graph that was of witch the button was clicked.
