@@ -409,4 +409,9 @@ main {
 #mobile-traffic h6 {
   margin: 0.5rem 0;
 }
+
+#mobile-traffic #mobileTraffic {
+  max-width: 300px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style-main.css.map */
