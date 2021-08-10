@@ -94,6 +94,22 @@ p .overline {
     letter-spacing: 1.5px;
     font-weight: 400;
 }
+p.accent {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    color: $blink_rich-black;
+    margin: 0;
+}
+p.big-number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.7rem;
+    letter-spacing: 0.15px;
+    font-weight: 300;
+    color: $blink_onxy;
+    margin: 0;
+}
 
 
 // Base layout
@@ -325,5 +341,39 @@ main {
     #mobileTraffic {
         max-width: 300px;
         margin: 0 auto;
+    }
+}
+
+#social-stats {
+    background-color: $blink_white;
+    border-bottom: solid 1px $blink_quick-silver;
+    padding: 1rem;
+    h6 {
+        margin: 0.5rem 0;
+    }
+}
+
+#social-stats__card-container-facebook,
+#social-stats__card-container-instagram {
+    // Sets up the card-container
+    display: flex;
+    flex-direction: row;
+    background-color: $blink_platinum;
+    border-radius: 7px;
+    border: 1px solid $blink_quick-silver;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    .icon-container {
+        svg {
+            width: 45px;
+            border-radius: 50%;
+            background-color: $blink_rich-black;
+            padding: 20px;
+        }
+    }
+    .type-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
     }
 }

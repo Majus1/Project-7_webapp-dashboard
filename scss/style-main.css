@@ -90,6 +90,24 @@ p .overline {
   font-weight: 400;
 }
 
+p.accent {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  color: #002F2F;
+  margin: 0;
+}
+
+p.big-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.7rem;
+  letter-spacing: 0.15px;
+  font-weight: 300;
+  color: #424242;
+  margin: 0;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -413,5 +431,51 @@ main {
 #mobile-traffic #mobileTraffic {
   max-width: 300px;
   margin: 0 auto;
+}
+
+#social-stats {
+  background-color: #ffffff;
+  border-bottom: solid 1px #A2A2A2;
+  padding: 1rem;
+}
+
+#social-stats h6 {
+  margin: 0.5rem 0;
+}
+
+#social-stats__card-container-facebook,
+#social-stats__card-container-instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #E6E6E6;
+  border-radius: 7px;
+  border: 1px solid #A2A2A2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#social-stats__card-container-facebook .icon-container svg,
+#social-stats__card-container-instagram .icon-container svg {
+  width: 45px;
+  border-radius: 50%;
+  background-color: #002F2F;
+  padding: 20px;
+}
+
+#social-stats__card-container-facebook .type-container,
+#social-stats__card-container-instagram .type-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style-main.css.map */

@@ -223,7 +223,7 @@ function createMobileTrafficGraph() {
 
             datasets: [{
                 label: "Houryl",
-                data : [200, 200, 200],
+                data : [200, 100, 200],
                 backgroundColor: [
                     'rgba(0, 47, 47, 0.7)',
                     'rgba(0, 47, 47, 0.5)',
