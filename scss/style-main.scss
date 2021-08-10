@@ -175,7 +175,7 @@ main {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 4;
     @media (min-width: 768px) {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -276,6 +276,7 @@ main {
         margin: 0.5rem 0;
     }
 }
+
 #web-traffic {
     // Sets up the chronological tab bar
     border-bottom: solid 1px $blink_quick-silver;
@@ -314,3 +315,11 @@ main {
     }
 }
 
+#mobile-traffic {
+    // Sets up the chronological tab bar
+    border-bottom: solid 1px $blink_quick-silver;
+    padding: 1rem;
+    h6 {
+        margin: 0.5rem 0;
+    }
+}

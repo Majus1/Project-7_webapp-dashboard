@@ -216,7 +216,7 @@ main {
   grid-column-end: 3;
   -ms-grid-row: 3;
       grid-row-start: 3;
-  grid-row-end: 5;
+  grid-row-end: 4;
 }
 
 @media (min-width: 768px) {
@@ -399,5 +399,14 @@ main {
 
 #web-traffic #chronological-tab-bar > input:active {
   background-color: #35DEA3;
+}
+
+#mobile-traffic {
+  border-bottom: solid 1px #A2A2A2;
+  padding: 1rem;
+}
+
+#mobile-traffic h6 {
+  margin: 0.5rem 0;
 }
 /*# sourceMappingURL=style-main.css.map */

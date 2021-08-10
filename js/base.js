@@ -212,3 +212,41 @@ chronologicalTabBar.addEventListener("click", (event) => {
         break;
     };
 });
+
+// ::::: GENERATE Mobile Traffic graph 4 fnction :::::
+function createMobileTrafficGraph() {
+    var chartCanvas2 = document.querySelector("#mobileTraffic");
+    var webTrafficChart = new Chart(chartCanvas2, {
+        type: "doughnut",
+        data: {
+            labels: ['Desktop', 'Tablet', 'Phones'],
+
+            datasets: [{
+                label: "Houryl",
+                data : [200, 200, 200],
+                backgroundColor: [
+                    'rgba(0, 47, 47, 0.7)',
+                    'rgba(0, 47, 47, 0.5)',
+                    'rgba(0, 47, 47, 0.2)'
+                ],
+                borderColor: ["rgba(0, 47, 47, 0.7)"], 
+                fill: true
+            }
+        ]
+        },
+        options: { 
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    display:false
+                }
+            },
+            plugins: {
+                legend: {
+                    position: `right`
+                }
+            }
+        }
+    });
+};
+createMobileTrafficGraph()
