@@ -364,11 +364,16 @@ main {
     padding: 1rem;
     margin-bottom: 1rem;
     .icon-container {
+        // Sets the icon in the middle of the circle.
+        // Sets the cize of the backgroun circle
+        display: flex;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: $blink_rich-black;
+        align-items: center;
         svg {
-            width: 45px;
-            border-radius: 50%;
-            background-color: $blink_rich-black;
-            padding: 20px;
+            margin: 0 auto;
         }
     }
     .type-container {

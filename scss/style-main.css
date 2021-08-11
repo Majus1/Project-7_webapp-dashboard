@@ -459,12 +459,23 @@ main {
   margin-bottom: 1rem;
 }
 
-#social-stats__card-container-facebook .icon-container svg,
-#social-stats__card-container-instagram .icon-container svg {
-  width: 45px;
+#social-stats__card-container-facebook .icon-container,
+#social-stats__card-container-instagram .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background-color: #002F2F;
-  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#social-stats__card-container-facebook .icon-container svg,
+#social-stats__card-container-instagram .icon-container svg {
+  margin: 0 auto;
 }
 
 #social-stats__card-container-facebook .type-container,
