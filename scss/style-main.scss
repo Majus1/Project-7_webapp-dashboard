@@ -384,8 +384,10 @@ main {
     }
 }
 
-#new-members {
-    // Sets up the new member section
+#new-members,
+#recent-activity {
+    // Sets up the new member section.
+    // And also the recent activity section.
     background-color: $blink_platinum;
     border-bottom: solid 1px $blink_quick-silver;
     padding: 1rem;

@@ -494,17 +494,20 @@ main {
   margin-left: 1rem;
 }
 
-#new-members {
+#new-members,
+#recent-activity {
   background-color: #E6E6E6;
   border-bottom: solid 1px #A2A2A2;
   padding: 1rem;
 }
 
-#new-members h6 {
+#new-members h6,
+#recent-activity h6 {
   margin: 0.5rem 0;
 }
 
-#new-members .new-members-card {
+#new-members .new-members-card,
+#recent-activity .new-members-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -518,25 +521,30 @@ main {
   margin: 1rem 0;
 }
 
-#new-members .new-members-card img {
+#new-members .new-members-card img,
+#recent-activity .new-members-card img {
   width: 75px;
   border-radius: 50%;
 }
 
-#new-members .new-members-card .type-container {
+#new-members .new-members-card .type-container,
+#recent-activity .new-members-card .type-container {
   text-align: center;
 }
 
-#new-members .new-members-card .type-container p {
+#new-members .new-members-card .type-container p,
+#recent-activity .new-members-card .type-container p {
   margin: 5px 0;
 }
 
-#new-members .new-members-card .type-container .email {
+#new-members .new-members-card .type-container .email,
+#recent-activity .new-members-card .type-container .email {
   color: #002F2F;
   font-weight: 500;
 }
 
-#new-members .new-members-card hr {
+#new-members .new-members-card hr,
+#recent-activity .new-members-card hr {
   margin-top: 1rem;
   width: 90%;
 }
