@@ -493,4 +493,51 @@ main {
           flex-direction: column;
   margin-left: 1rem;
 }
+
+#new-members {
+  background-color: #E6E6E6;
+  border-bottom: solid 1px #A2A2A2;
+  padding: 1rem;
+}
+
+#new-members h6 {
+  margin: 0.5rem 0;
+}
+
+#new-members .new-members-card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+#new-members .new-members-card img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+#new-members .new-members-card .type-container {
+  text-align: center;
+}
+
+#new-members .new-members-card .type-container p {
+  margin: 5px 0;
+}
+
+#new-members .new-members-card .type-container .email {
+  color: #002F2F;
+  font-weight: 500;
+}
+
+#new-members .new-members-card hr {
+  margin-top: 1rem;
+  width: 90%;
+}
 /*# sourceMappingURL=style-main.css.map */

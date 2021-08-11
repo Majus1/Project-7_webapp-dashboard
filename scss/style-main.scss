@@ -383,3 +383,37 @@ main {
         margin-left: 1rem;
     }
 }
+
+#new-members {
+    // Sets up the new member section
+    background-color: $blink_platinum;
+    border-bottom: solid 1px $blink_quick-silver;
+    padding: 1rem;
+    h6 {
+        margin: 0.5rem 0;
+    }
+    .new-members-card {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        img {
+            width: 75px;
+            border-radius: 50%;
+        }
+        .type-container {
+            text-align: center;
+            p {
+                margin: 5px 0;
+            }
+            .email {
+                color: $blink_rich-black;
+                font-weight: 500;
+            }
+        }
+        hr {
+            margin-top: 1rem;
+            width: 90%;
+        }
+    }
+}
