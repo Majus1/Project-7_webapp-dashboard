@@ -496,7 +496,7 @@ main {
 
 #new-members,
 #recent-activity {
-  background-color: #E6E6E6;
+  background-color: #ffffff;
   border-bottom: solid 1px #A2A2A2;
   padding: 1rem;
 }
@@ -547,5 +547,14 @@ main {
 #recent-activity .new-members-card hr {
   margin-top: 1rem;
   width: 90%;
+}
+
+#message-user {
+  border-bottom: solid 1px #A2A2A2;
+  padding: 1rem;
+}
+
+#message-user h6 {
+  margin: 0.5rem 0;
 }
 /*# sourceMappingURL=style-main.css.map */

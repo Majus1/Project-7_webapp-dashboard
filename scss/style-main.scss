@@ -388,7 +388,7 @@ main {
 #recent-activity {
     // Sets up the new member section.
     // And also the recent activity section.
-    background-color: $blink_platinum;
+    background-color: $blink_white;
     border-bottom: solid 1px $blink_quick-silver;
     padding: 1rem;
     h6 {
@@ -417,5 +417,14 @@ main {
             margin-top: 1rem;
             width: 90%;
         }
+    }
+}
+
+#message-user {
+    // Sets up the message user section
+    border-bottom: solid 1px $blink_quick-silver;
+    padding: 1rem;
+    h6 {
+        margin: 0.5rem 0;
     }
 }
