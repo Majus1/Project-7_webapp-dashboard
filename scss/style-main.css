@@ -444,7 +444,8 @@ main {
 }
 
 #social-stats__card-container-facebook,
-#social-stats__card-container-instagram {
+#social-stats__card-container-instagram,
+#social-stats__card-container-twitter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,7 +461,8 @@ main {
 }
 
 #social-stats__card-container-facebook .icon-container,
-#social-stats__card-container-instagram .icon-container {
+#social-stats__card-container-instagram .icon-container,
+#social-stats__card-container-twitter .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,12 +476,14 @@ main {
 }
 
 #social-stats__card-container-facebook .icon-container svg,
-#social-stats__card-container-instagram .icon-container svg {
+#social-stats__card-container-instagram .icon-container svg,
+#social-stats__card-container-twitter .icon-container svg {
   margin: 0 auto;
 }
 
 #social-stats__card-container-facebook .type-container,
-#social-stats__card-container-instagram .type-container {
+#social-stats__card-container-instagram .type-container,
+#social-stats__card-container-twitter .type-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
