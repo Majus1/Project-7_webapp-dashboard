@@ -12,6 +12,8 @@ const dailylTab = document.querySelector("#daily-tab");
 const weeklylTab = document.querySelector("#weekly-tab");
 const monthlylTab = document.querySelector("#monthly-tab");
 hourylTab.focus();
+// ::::: The inputs and buttons :::::
+const messageUserTextarea= document.querySelector("#user-message");
 
 
 // THE BASE
@@ -30,6 +32,10 @@ submissionFailButton.addEventListener("click", ()=> {
     submissionFailNotification.style.display="none";
 });
 
+
+messageUserTextarea.addEventListener("click", ()=> {
+    console.log("Deluje");
+});
 
 // THE GRAPHS
 // ::::: Daily Traffic graph :::::
@@ -265,3 +271,5 @@ function createMobileTrafficGraph() {
     });
 };
 createMobileTrafficGraph()
+
+// ::::: GENERATE Notification on send button click :::::
