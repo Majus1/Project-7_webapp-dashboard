@@ -237,6 +237,49 @@ main {
     }
 }
 
+input[type="button"] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    height: 50px;
+    background-color: $blink_rich-black;
+    color: $blink_white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    height: 40px;
+    border-radius: 5px;
+    border: $blink_deep-space-sparkle 2px solid;
+    color: $blink_quick-silver;
+    background-color: $blink_platinum;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    resize: none;
+    height: 120px;
+    border-radius: 5px;
+    border: $blink_deep-space-sparkle 2px solid;
+    color: $blink_quick-silver;
+    background-color: $blink_platinum;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;   
+}
+
 #logo {
     color: $blink_platinum;
     font-weight: 400;
@@ -422,7 +465,10 @@ main {
 
 #message-user {
     // Sets up the message user section
+    display: flex;
+    flex-direction: column;
     border-bottom: solid 1px $blink_quick-silver;
+    background-color: $blink_white;
     padding: 1rem;
     h6 {
         margin: 0.5rem 0;

@@ -305,6 +305,49 @@ main {
   }
 }
 
+input[type="button"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  height: 50px;
+  background-color: #002F2F;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  height: 40px;
+  border-radius: 5px;
+  border: #516969 2px solid;
+  color: #A2A2A2;
+  background-color: #E6E6E6;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  resize: none;
+  height: 120px;
+  border-radius: 5px;
+  border: #516969 2px solid;
+  color: #A2A2A2;
+  background-color: #E6E6E6;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
 #logo {
   color: #E6E6E6;
   font-weight: 400;
@@ -550,7 +593,15 @@ main {
 }
 
 #message-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-bottom: solid 1px #A2A2A2;
+  background-color: #ffffff;
   padding: 1rem;
 }
 
