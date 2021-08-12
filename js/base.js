@@ -300,3 +300,4 @@ document.addEventListener("click", (e)=> {
         console.log(e.target);
     }
 });
+// Continue working on the upper event listener.
