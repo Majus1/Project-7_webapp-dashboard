@@ -217,6 +217,17 @@
                 <!-- The message user section -->
                 <div id="message-user">
                     <h6>MESSAGE USER</h6>
+
+                    <div id="submission-successfull-notification-bar">
+                        <p>Message was sent</p>
+                        <b class ="cancle-button" id="submission-successfull-cancle-button">x</b>
+                    </div>
+
+                    <div id="submission-fail-notification-bar">
+                        <p>User isn’t selected or message field is empty</p>
+                        <b class ="cancle-button" id="submission-fail-cancle-button">x</b>
+                    </div>
+
                     <!-- continue adding the rest of the form elments -->
                     <input type="text" id="user-search" name="user-search" placeholder="Search for User">
                     <textarea id="user-message" name="user-message" placeholder="Message for user"></textarea>

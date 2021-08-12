@@ -1,6 +1,10 @@
 // Variables
 const alertCancleButton = document.querySelector("#alert-cancle-button");
 const alertNotificationBar = document.querySelector("#alert-notification-bar");
+const submissionSuccessButton = document.querySelector("#submission-successfull-cancle-button");
+const submissionSuccessNotification = document.querySelector("#submission-successfull-notification-bar");
+const submissionFailButton = document.querySelector("#submission-fail-cancle-button");
+const submissionFailNotification = document.querySelector("#submission-fail-notification-bar");
 // ::::: The overall traffic graph tabs :::::
 const chronologicalTabBar = document.querySelector("#chronological-tab-bar");
 const hourylTab = document.querySelector("#hourly-tab");
@@ -12,7 +16,18 @@ hourylTab.focus();
 
 // THE BASE
 alertCancleButton.addEventListener("click", ()=> {
+    // Cancles the alert notification.
     alertNotificationBar.style.display="none";
+});
+
+submissionSuccessButton.addEventListener("click", ()=> {
+    // Cancles the submission success notification.
+    submissionSuccessNotification.style.display="none";
+});
+
+submissionFailButton.addEventListener("click", ()=> {
+    // Cancles the submission success notification.
+    submissionFailNotification.style.display="none";
 });
 
 

@@ -408,6 +408,48 @@ textarea {
   margin-left: auto;
 }
 
+#submission-successfull-notification-bar {
+  background-color: #35DEA3;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 1rem 1rem;
+}
+
+#submission-successfull-notification-bar p {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#submission-successfull-notification-bar #submission-successfull-cancle-button {
+  margin-left: auto;
+}
+
+#submission-fail-notification-bar {
+  background-color: #ff8a8a;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 1rem 1rem;
+}
+
+#submission-fail-notification-bar p {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#submission-fail-notification-bar #submission-fail-cancle-button {
+  margin-left: auto;
+}
+
 #daily-traffic {
   border-bottom: solid 1px #A2A2A2;
   padding: 1rem;
