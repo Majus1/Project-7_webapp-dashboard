@@ -13,8 +13,7 @@ const weeklylTab = document.querySelector("#weekly-tab");
 const monthlylTab = document.querySelector("#monthly-tab");
 hourylTab.focus();
 // ::::: The inputs and buttons :::::
-const messageUserTextarea= document.querySelector("#user-message");
-
+const messageUserSendBtn = document.querySelector("#message-user-send-btn");
 
 // THE BASE
 alertCancleButton.addEventListener("click", ()=> {
@@ -32,10 +31,6 @@ submissionFailButton.addEventListener("click", ()=> {
     submissionFailNotification.style.display="none";
 });
 
-
-messageUserTextarea.addEventListener("click", ()=> {
-    console.log("Deluje");
-});
 
 // THE GRAPHS
 // ::::: Daily Traffic graph :::::
@@ -273,3 +268,12 @@ function createMobileTrafficGraph() {
 createMobileTrafficGraph()
 
 // ::::: GENERATE Notification on send button click :::::
+messageUserSendBtn.addEventListener("click", ()=> {
+    // Function check the content of the text area and respods.
+    console.log("Deluje");
+    const messageUserTextarea= document.querySelector("#user-message"); 
+    console.log(messageUserTextarea.value);
+    if (messageUserTextarea.value==="") {
+        console.log("Yes its empty");
+    };
+});
