@@ -331,9 +331,9 @@ textarea {
 
 #submission-successfull-notification-bar {
     // Sets up the notification bar
+    display: flex;
     background-color: $blink_medium-aqua-marine;
     color: $blink_white;
-    display: flex;
     border-radius: 5px;
     padding: 12px;
     margin: 1rem 1rem;
@@ -341,6 +341,7 @@ textarea {
         margin-top: 0;
         margin-right: 0;
         margin-bottom: 0;
+        
     }
     #submission-successfull-cancle-button {
         margin-left: auto;
@@ -349,9 +350,9 @@ textarea {
 
 #submission-fail-notification-bar {
     // Sets up the notification bar
+    display: flex;
     background-color: $blink_light-coral;
     color: $blink_white;
-    display: flex;
     border-radius: 5px;
     padding: 12px;
     margin: 1rem 1rem;

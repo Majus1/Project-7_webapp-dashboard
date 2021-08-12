@@ -21,15 +21,17 @@ alertCancleButton.addEventListener("click", ()=> {
     alertNotificationBar.style.display="none";
 });
 
-submissionSuccessButton.addEventListener("click", ()=> {
-    // Cancles the submission success notification.
-    submissionSuccessNotification.style.display="none";
-});
+// submissionSuccessButton.addEventListener("click", ()=> {
+//     // Cancles the submission success notification.
+//     submissionSuccessNotification.style.display="none";
+// });
 
-submissionFailButton.addEventListener("click", ()=> {
-    // Cancles the submission success notification.
-    submissionFailNotification.style.display="none";
-});
+// submissionFailButton.addEventListener("click", ()=> {
+//     // Cancles the submission success notification.
+//     submissionFailNotification.style.display="none";
+// });
+
+// perhaps we could replace this with nth-child logic?
 
 
 // THE GRAPHS
@@ -268,12 +270,33 @@ function createMobileTrafficGraph() {
 createMobileTrafficGraph()
 
 // ::::: GENERATE Notification on send button click :::::
-messageUserSendBtn.addEventListener("click", ()=> {
-    // Function check the content of the text area and respods.
-    console.log("Deluje");
+// • Function check the content of the text area and respods.
+// • By creating a fail notification.
+// • By creating a success notification.
+messageUserSendBtn.addEventListener("click", (e)=> {
     const messageUserTextarea= document.querySelector("#user-message"); 
-    console.log(messageUserTextarea.value);
+    let messageUserNotification= document.querySelector("#message-user-notification"); 
+
     if (messageUserTextarea.value==="") {
-        console.log("Yes its empty");
+        messageUserNotification.innerHTML=`
+        <div id="submission-fail-notification-bar">
+            <p>User isn’t selected or message field is empty</p>
+            <b class ="cancle-button" id="submission-fail-cancle-button">x</b>
+        </div>`;
+    } else {
+        messageUserNotification.innerHTML=`
+        <div id="submission-successfull-notification-bar">
+            <p>Message was sent</p>
+            <b class ="cancle-button" id="submission-successfull-cancle-button">x</b>
+        </div>`;
     };
+});
+
+// ::::: ENABLES notification button cancelation :::::
+document.addEventListener("click", (e)=> {
+    let messageUserNotification= document.querySelector("#message-user-notification");
+    let messageUserNotificationCancleBtn = messageUserNotification.querySelector("#submission-successfull-cancle-button");
+    if (e.target===messageUserNotificationCancleBtn) {
+        console.log(e.target);
+    }
 });
