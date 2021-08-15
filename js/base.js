@@ -297,11 +297,18 @@ messageUserSendBtn.addEventListener("click", (e)=> {
 document.addEventListener("click", (e)=> {
     let messageUserNotification= document.querySelector("#message-user-notification");
     let messageUserNotificationSuccess = document.querySelector("#submission-successfull-notification-bar");
-    let messageUserNotificationCancleBtn = messageUserNotification.querySelector("#submission-successfull-cancle-button");
-    if (e.target===messageUserNotificationCancleBtn) {
+    let messageUserNotificationSuccesCancleBtn = messageUserNotification.querySelector("#submission-successfull-cancle-button");
+    let messageUserNotificationFail = document.querySelector("#submission-fail-notification-bar");
+    let messageUserNotificationFailCancleBtn = messageUserNotification.querySelector("#submission-fail-cancle-button");
+    if (e.target===messageUserNotificationSuccesCancleBtn) {
+        // Eddects only notification success
         console.log(e.target);
         messageUserNotificationSuccess.remove();
         console.log(`Notification now removed`);
-    }
+    } else if (e.target===messageUserNotificationFailCancleBtn) {
+        console.log(e.target);
+        messageUserNotificationFail.remove();
+        console.log(`Notification now removed`);
+    };
 });
 // Continue working on the upper event listener .
