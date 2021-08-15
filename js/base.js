@@ -293,11 +293,15 @@ messageUserSendBtn.addEventListener("click", (e)=> {
 });
 
 // ::::: ENABLES notification button cancelation :::::
+// Onec a notification bar has apeard in the DOM it can now be cancle.
 document.addEventListener("click", (e)=> {
     let messageUserNotification= document.querySelector("#message-user-notification");
+    let messageUserNotificationSuccess = document.querySelector("#submission-successfull-notification-bar");
     let messageUserNotificationCancleBtn = messageUserNotification.querySelector("#submission-successfull-cancle-button");
     if (e.target===messageUserNotificationCancleBtn) {
         console.log(e.target);
+        messageUserNotificationSuccess.remove();
+        console.log(`Notification now removed`);
     }
 });
-// Continue working on the upper event listener.
+// Continue working on the upper event listener .
