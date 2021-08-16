@@ -752,4 +752,8 @@ textarea {
 #settings #email-notification-settings__wraper label.switch {
   margin-left: auto;
 }
+
+#settings select {
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=style-main.css.map */
