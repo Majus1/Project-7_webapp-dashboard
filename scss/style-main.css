@@ -745,10 +745,11 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 343px;
 }
 
-#settings #profile-settings__wraper p,
-#settings #email-notification-settings__wraper p {
-  margin-right: 1rem;
+#settings #profile-settings__wraper label.switch,
+#settings #email-notification-settings__wraper label.switch {
+  margin-left: auto;
 }
 /*# sourceMappingURL=style-main.css.map */
