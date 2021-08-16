@@ -203,10 +203,10 @@ header nav #user-info-block #profile-image {
           align-items: center;
 }
 
-#sidebar #home-icn,
-#sidebar #charts-icn,
-#sidebar #members-icn,
-#sidebar #settings-icn {
+#sidebar #home,
+#sidebar #charts,
+#sidebar #members,
+#sidebar #settings {
   width: 35px;
   height: 35px;
   margin: 0.45rem 0.7rem;
@@ -755,31 +755,5 @@ textarea {
 
 #settings select {
   margin-top: 1rem;
-}
-
-#settings .button-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 0.5rem;
-}
-
-#settings .button-area #cancle-button {
-  background-color: #A2A2A2;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-left: 5px;
-}
-
-#settings .button-area #save-button {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: 5px;
 }
 /*# sourceMappingURL=style-main.css.map */
