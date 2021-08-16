@@ -276,14 +276,18 @@ createMobileTrafficGraph()
 messageUserSendBtn.addEventListener("click", (e)=> {
     const messageUserTextarea= document.querySelector("#user-message"); 
     let messageUserNotification= document.querySelector("#message-user-notification"); 
+    let searchForUser = document.querySelector("#user-search");
 
-    if (messageUserTextarea.value==="") {
+    if (messageUserTextarea.value ==="" || searchForUser.value ==="") {
+        // Checks if there is anything is written in the textarea if not code runs.
+        // Checks if user is selected if not code runs.
         messageUserNotification.innerHTML=`
         <div id="submission-fail-notification-bar">
             <p>User isn’t selected or message field is empty</p>
             <b class ="cancle-button" id="submission-fail-cancle-button">x</b>
         </div>`;
-    } else {
+    } else if (messageUserTextarea.value !=="" && searchForUser.value !=="") {
+        // Checks if there is anything is written in the textarea and if user is selecte. If both true code runs
         messageUserNotification.innerHTML=`
         <div id="submission-successfull-notification-bar">
             <p>Message was sent</p>
