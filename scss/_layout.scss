@@ -1,0 +1,119 @@
+// ::::: Lay Out :::::
+#student-name {
+    color: $blink_platinum;
+    margin: 0 15px 0 5px;
+}
+
+#profile-image {
+    border-radius: 100px;
+    margin: 0 5px 0;
+}
+
+#notifications {
+    fill: $blink_platinum;
+    padding: 4px;
+    :hover {
+        @keyframes wiggle {
+            30% {
+              transform: rotate(25deg);
+            }
+            50% {
+              transform: rotate(0);
+            }
+            70% {
+              transform: rotate(25deg);
+            }
+        }
+        animation: wiggle 1s;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
+}
+  
+.container {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 62px 60px 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+}
+
+header {
+    // Sets up the header layout
+    background-color: $blink_rich-black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+        #user-info-block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: auto;
+            hr {
+                width: 20px;
+                transform: rotate(90deg);
+            }
+            #notifications {
+                width: 20px;
+            }
+            #profile-image {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+#sidebar {
+    // Sets up the sidebar layout
+    background-color: $blink_deep-space-sparkle;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    #home-icn,
+    #charts-icn,
+    #members-icn,
+    #settings-icn {
+        width: 35px;
+        height: 35px;
+        margin: 0.45rem 0.7rem;
+    }
+    @media (min-width: 768px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        flex-direction: column;
+    }
+}
+
+main {
+    background-color: $blink_platinum;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    @media (min-width: 768px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+}
+// ::::: Lay Out :::::  

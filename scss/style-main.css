@@ -108,6 +108,59 @@ p.big-number {
   margin: 0;
 }
 
+#student-name {
+  color: #E6E6E6;
+  margin: 0 15px 0 5px;
+}
+
+#profile-image {
+  border-radius: 100px;
+  margin: 0 5px 0;
+}
+
+#notifications {
+  fill: #E6E6E6;
+  padding: 4px;
+}
+
+#notifications :hover {
+  -webkit-animation: wiggle 1s;
+          animation: wiggle 1s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes wiggle {
+  30% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  70% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
+@keyframes wiggle {
+  30% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  70% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -248,63 +301,6 @@ main {
   }
 }
 
-* {
-  font-family: serif;
-}
-
-#student-name {
-  color: #E6E6E6;
-  margin: 0 15px 0 5px;
-}
-
-#profile-image {
-  border-radius: 100px;
-  margin: 0 5px 0;
-}
-
-#notifications {
-  fill: #E6E6E6;
-  padding: 4px;
-}
-
-#notifications :hover {
-  -webkit-animation: wiggle 1s;
-          animation: wiggle 1s;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  transform-box: fill-box;
-}
-
-@-webkit-keyframes wiggle {
-  30% {
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
-  }
-  50% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  70% {
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
-  }
-}
-
-@keyframes wiggle {
-  30% {
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
-  }
-  50% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  70% {
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
-  }
-}
-
 input[type="button"] {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -411,6 +407,10 @@ textarea {
   padding-top: 10px;
   padding-left: 10px;
   margin-bottom: 10px;
+}
+
+* {
+  font-family: serif;
 }
 
 #logo {
