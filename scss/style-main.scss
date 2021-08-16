@@ -170,10 +170,10 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    #home,
-    #charts,
-    #members,
-    #settings {
+    #home-icn,
+    #charts-icn,
+    #members-icn,
+    #settings-icn {
         width: 35px;
         height: 35px;
         margin: 0.45rem 0.7rem;
@@ -602,5 +602,19 @@ textarea {
     }
     select {
         margin-top: 1rem;
+    }
+    .button-area {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5rem;
+        #cancle-button {
+            background-color: $blink_quick-silver;
+            flex-grow: 1;
+            margin-left:5px;
+        }
+        #save-button {
+            flex-grow: 1;
+            margin-right:5px;
+        }
     }
 }
