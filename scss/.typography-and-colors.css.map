@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        ".typography-and-colors.scss"
+    ],
+    "names": [],
+    "file": ".typography-and-colors.css"
+}
