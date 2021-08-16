@@ -652,4 +652,21 @@ textarea {
 #message-user h6 {
   margin: 0.5rem 0;
 }
+
+#settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: solid 1px #A2A2A2;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+#settings h6 {
+  margin: 0.5rem 0;
+}
 /*# sourceMappingURL=style-main.css.map */

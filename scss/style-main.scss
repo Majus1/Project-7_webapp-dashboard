@@ -513,3 +513,15 @@ textarea {
         margin: 0.5rem 0;
     }
 }
+
+#settings {
+    // Sets up the message settings section
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px $blink_quick-silver;
+    background-color: $blink_white;
+    padding: 1rem;
+    h6 {
+        margin: 0.5rem 0;
+    }
+}
