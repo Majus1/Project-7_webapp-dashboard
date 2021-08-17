@@ -182,14 +182,14 @@
     background-color: $blink_platinum;
     border-radius: 7px;
     border: 1px solid $blink_quick-silver;
-    padding: 1rem;
+    padding: 0.7rem;
     margin-bottom: 1rem;
     .icon-container {
         // Sets the icon in the middle of the circle.
         // Sets the cize of the backgroun circle
         display: flex;
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         background-color: $blink_rich-black;
         align-items: center;

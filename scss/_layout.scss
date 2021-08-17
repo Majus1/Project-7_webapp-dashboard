@@ -146,6 +146,21 @@ main {
         #dailyTrafic {
             margin: 20% 10%;
         }
+        #social-stats {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            .social-stats__card-section {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+            #social-stats__card-container-facebook,
+            #social-stats__card-container-instagram,
+            #social-stats__card-container-twitter {
+                flex-grow: 1;
+                margin: 0 5px;
+            }
+        }
     }
 }
 // ::::: Lay Out :::::  
