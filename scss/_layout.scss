@@ -120,19 +120,31 @@ main {
 
 #content-area {
     // Sets up the content area layout
-    border: 2px solid red;
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         #alert-notification-bar {
-            border: 2px solid green;
             grid-column-start: 1;
             grid-column-end: 3;
         }
         #web-traffic {
-            border: 2px solid blue;
             grid-column-start: 1;
             grid-column-end: 3;
+        }
+        #daily-traffic {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #mobile-traffic {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            border-left: solid 2px $blink_quick-silver;
+        }
+        #mobileTraffic {
+            margin: 10% 15%;
+        }
+        #dailyTrafic {
+            margin: 20% 10%;
         }
     }
 }
