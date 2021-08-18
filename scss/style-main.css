@@ -475,6 +475,17 @@ textarea {
   margin-left: 1rem;
 }
 
+.arrow-icon {
+  display: none;
+  fill: #A2A2A2;
+}
+
+@media (min-width: 786px) {
+  .arrow-icon {
+    display: inline-block;
+  }
+}
+
 #dash-tab-bar {
   display: -ms-grid;
   display: grid;
@@ -759,6 +770,24 @@ canvas {
   margin: 1rem 0;
 }
 
+#new-members .new-members-card p,
+#recent-activity .new-members-card p {
+  margin: 5px 0;
+}
+
+@media (min-width: 786px) {
+  #new-members .new-members-card,
+  #recent-activity .new-members-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #new-members .new-members-card img,
 #recent-activity .new-members-card img {
   width: 75px;
@@ -768,11 +797,7 @@ canvas {
 #new-members .new-members-card .type-container,
 #recent-activity .new-members-card .type-container {
   text-align: center;
-}
-
-#new-members .new-members-card .type-container p,
-#recent-activity .new-members-card .type-container p {
-  margin: 5px 0;
+  width: 100%;
 }
 
 #new-members .new-members-card .type-container .email,
@@ -781,10 +806,43 @@ canvas {
   font-weight: 500;
 }
 
-#new-members .new-members-card hr,
-#recent-activity .new-members-card hr {
+@media (min-width: 786px) {
+  #new-members .new-members-card .type-container,
+  #recent-activity .new-members-card .type-container {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  #new-members .new-members-card .type-container :nth-child(3),
+  #recent-activity .new-members-card .type-container :nth-child(3) {
+    text-align: right;
+  }
+}
+
+#new-members hr,
+#recent-activity hr {
   margin-top: 1rem;
   width: 90%;
+}
+
+@media (min-width: 786px) {
+  #new-members hr,
+  #recent-activity hr {
+    width: 100%;
+  }
+}
+
+@media (min-width: 786px) {
+  #new-members,
+  #recent-activity {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+#new-members hr:last-child,
+#recent-activity hr:last-child {
+  display: none;
 }
 
 #message-user {

@@ -9,6 +9,15 @@
     margin-left: 1rem;
 }
 
+
+.arrow-icon {
+    display: none;
+    fill: $blink_quick-silver;
+    @media (min-width: 786px) {
+        display: inline-block;
+    }
+}
+
 #dash-tab-bar {
     // Sets up the dash bar layout
     display: grid;
@@ -222,24 +231,47 @@ canvas {
         display: flex;
         flex-direction: column;
         margin: 1rem 0;
+        p {
+            margin: 5px 0;
+        }
+        @media (min-width: 786px) {
+            flex-direction: row;
+            align-items: center;
+        }
         img {
             width: 75px;
             border-radius: 50%;
         }
         .type-container {
             text-align: center;
-            p {
-                margin: 5px 0;
-            }
+            width: 100%;
+
             .email {
                 color: $blink_rich-black;
                 font-weight: 500;
             }
+            @media (min-width: 786px) {
+                text-align: left;
+                margin-left: 1rem;
+                :nth-child(3) {
+                    text-align: right;
+                }
+            }
         }
-        hr {
-            margin-top: 1rem;
-            width: 90%;
+    }
+    hr {
+        margin-top: 1rem;
+        width: 90%;
+        @media (min-width: 786px) {
+            width: 100%;
         }
+    }
+    @media (min-width: 786px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    hr:last-child {
+        display: none;
     }
 }
 
