@@ -936,4 +936,12 @@ canvas {
           flex-grow: 1;
   margin-right: 5px;
 }
+
+@media (min-width: 786px) {
+  #settings {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 /*# sourceMappingURL=style-main.css.map */
