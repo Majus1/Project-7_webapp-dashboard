@@ -285,6 +285,10 @@ canvas {
     h6 {
         margin: 0.5rem 0;
     }
+    @media (min-width: 786px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 
 #settings {

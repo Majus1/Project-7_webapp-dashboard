@@ -862,6 +862,14 @@ canvas {
   margin: 0.5rem 0;
 }
 
+@media (min-width: 786px) {
+  #message-user {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
 #settings {
   display: -webkit-box;
   display: -ms-flexbox;
