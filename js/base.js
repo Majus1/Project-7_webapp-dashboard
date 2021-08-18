@@ -253,6 +253,7 @@ function createMobileTrafficGraph() {
         ]
         },
         options: { 
+            aspectRatio: 1.9,
             scales: {
                 y: {
                     beginAtZero: true,

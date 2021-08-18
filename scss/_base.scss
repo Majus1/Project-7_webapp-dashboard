@@ -87,6 +87,9 @@
         margin-left: auto;
     }
 }
+canvas {
+    max-width: 100%;
+}
 
 #daily-traffic {
     border-bottom: solid 1px $blink_quick-silver;

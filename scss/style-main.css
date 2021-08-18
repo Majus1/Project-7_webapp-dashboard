@@ -330,12 +330,6 @@ main {
     grid-column-end: 3;
     border-left: solid 2px #A2A2A2;
   }
-  #content-area #mobileTraffic {
-    margin: 10% 15%;
-  }
-  #content-area #dailyTrafic {
-    margin: 20% 10%;
-  }
   #content-area #social-stats {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -575,6 +569,10 @@ textarea {
 
 #submission-fail-notification-bar #submission-fail-cancle-button {
   margin-left: auto;
+}
+
+canvas {
+  max-width: 100%;
 }
 
 #daily-traffic {
