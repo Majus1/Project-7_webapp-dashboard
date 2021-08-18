@@ -157,4 +157,28 @@ main {
         }
     }
 }
+
+#new-members {
+    // Sets up the new-members area layout
+    @media (min-width: 786px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    @media (min-width: 1024px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+#recent-activity {
+    // Sets up the revent-activity area layout
+    @media (min-width: 786px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    @media (min-width: 1024px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
 // ::::: Lay Out :::::  

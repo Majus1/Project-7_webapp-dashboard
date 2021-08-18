@@ -133,6 +133,10 @@ canvas {
             padding: 10px;
         }
     }
+    #graph-container {
+        max-width: 922px;
+        margin: 0 auto;
+    }
     #hourly-tab:focus,
     #daily-tab:focus,
     #weekly-tab:focus,
@@ -263,13 +267,13 @@ canvas {
             width: 100%;
         }
     }
-    @media (min-width: 786px) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
     hr:last-child {
         display: none;
     }
+}
+
+#new-members{
+    border-right: solid 1px $blink_quick-silver;
 }
 
 #message-user {
