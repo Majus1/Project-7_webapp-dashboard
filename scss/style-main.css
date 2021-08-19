@@ -389,6 +389,39 @@ main {
   }
 }
 
+@media (min-width: 786px) {
+  #message-user {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  #message-user {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media (min-width: 786px) {
+  #settings {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    border-left: solid 1px #A2A2A2;
+  }
+}
+
+@media (min-width: 1024px) {
+  #settings {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
 input[type="button"] {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -890,14 +923,6 @@ canvas {
   margin: 0.5rem 0;
 }
 
-@media (min-width: 786px) {
-  #message-user {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 3;
-  }
-}
-
 #settings {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -963,13 +988,5 @@ canvas {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 5px;
-}
-
-@media (min-width: 786px) {
-  #settings {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 3;
-  }
 }
 /*# sourceMappingURL=style-main.css.map */

@@ -181,4 +181,29 @@ main {
         grid-column-end: 3;
     }
 }
+
+#message-user {
+    // Sets up the message-user area layout
+    @media (min-width: 786px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    @media (min-width: 1024px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+#settings {
+    // Sets up the settings area layout
+    @media (min-width: 786px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-left: solid 1px $blink_quick-silver;
+    }
+    @media (min-width: 1024px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
 // ::::: Lay Out :::::  
