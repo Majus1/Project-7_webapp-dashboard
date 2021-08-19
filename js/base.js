@@ -18,21 +18,10 @@ const messageUserSendBtn = document.querySelector("#message-user-send-btn");
 // THE BASE
 alertCancleButton.addEventListener("click", ()=> {
     // Cancles the alert notification.
+    let notificationDot = document.querySelector(".notification-dot");
     alertNotificationBar.style.display="none";
+    notificationDot.style.display="none";
 });
-
-// submissionSuccessButton.addEventListener("click", ()=> {
-//     // Cancles the submission success notification.
-//     submissionSuccessNotification.style.display="none";
-// });
-
-// submissionFailButton.addEventListener("click", ()=> {
-//     // Cancles the submission success notification.
-//     submissionFailNotification.style.display="none";
-// });
-
-// perhaps we could replace this with nth-child logic?
-
 
 // THE GRAPHS
 // ::::: Daily Traffic graph :::::
