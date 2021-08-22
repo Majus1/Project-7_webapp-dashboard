@@ -44,6 +44,7 @@ header {
     background-color: $blink_rich-black;
     grid-column-start: 1;
     grid-column-end: 3;
+    position: relative;
     nav {
         display: flex;
         flex-direction: row;
@@ -65,6 +66,29 @@ header {
             #profile-image {
                 width: 30px;
                 height: 30px;
+            }
+            #notification-dropdown {
+                // sets the style for the notification drop down
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 300px;
+                background-color: $blink_platinum;
+                li {
+                    padding-top: 5px;
+                }
+                li:hover {
+                    background-color: #a5ffe2;
+                    margin: 0;
+                }
+                hr {
+                    width: 290px;
+                    transform: rotate(0deg);
+                    margin: 0;
+                }
+                p {
+                    padding: 0 20px;
+                }
             }
         }
     }

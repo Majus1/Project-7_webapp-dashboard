@@ -113,6 +113,7 @@ p.big-number {
   font-size: 0.8rem;
   letter-spacing: 0.25px;
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -194,6 +195,7 @@ header {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+  position: relative;
 }
 
 header nav {
@@ -238,6 +240,34 @@ header nav #user-info-block #notifications {
 header nav #user-info-block #profile-image {
   width: 30px;
   height: 30px;
+}
+
+header nav #user-info-block #notification-dropdown {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 300px;
+  background-color: #E6E6E6;
+}
+
+header nav #user-info-block #notification-dropdown li {
+  padding-top: 5px;
+}
+
+header nav #user-info-block #notification-dropdown li:hover {
+  background-color: #a5ffe2;
+  margin: 0;
+}
+
+header nav #user-info-block #notification-dropdown hr {
+  width: 290px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  margin: 0;
+}
+
+header nav #user-info-block #notification-dropdown p {
+  padding: 0 20px;
 }
 
 @media (min-width: 768px) {
