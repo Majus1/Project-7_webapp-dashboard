@@ -13,7 +13,7 @@
 .arrow-icon {
     display: none;
     fill: $blink_quick-silver;
-    @media (min-width: 786px) {
+    @media (min-width: 768px) {
         display: inline-block;
     }
 }
@@ -235,7 +235,7 @@ canvas {
         p {
             margin: 5px 0;
         }
-        @media (min-width: 786px) {
+        @media (min-width: 768px) {
             flex-direction: row;
             align-items: center;
         }
@@ -251,7 +251,7 @@ canvas {
                 color: $blink_rich-black;
                 font-weight: 500;
             }
-            @media (min-width: 786px) {
+            @media (min-width: 768px) {
                 text-align: left;
                 margin-left: 1rem;
                 :nth-child(3) {
@@ -263,7 +263,7 @@ canvas {
     hr {
         margin-top: 1rem;
         width: 90%;
-        @media (min-width: 786px) {
+        @media (min-width: 768px) {
             width: 100%;
         }
     }

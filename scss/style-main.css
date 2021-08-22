@@ -108,6 +108,22 @@ p.big-number {
   margin: 0;
 }
 
+.notification-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.notification-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
 #student-name {
   color: #E6E6E6;
   margin: 0 15px 0 5px;
@@ -357,7 +373,7 @@ main {
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   #new-members {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -373,7 +389,7 @@ main {
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   #recent-activity {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -389,7 +405,7 @@ main {
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   #message-user {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -405,7 +421,7 @@ main {
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   #settings {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -420,6 +436,29 @@ main {
         grid-column-start: 2;
     grid-column-end: 3;
   }
+}
+
+#notification-dropdown {
+  position: relative;
+  bottom: 1150px;
+  left: 30px;
+  background-color: #E6E6E6;
+  width: 200px;
+  height: 200px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+#notification-dropdown li {
+  margin: 10px 0;
+}
+
+#notification-dropdown li p {
+  padding-left: 7px;
+}
+
+#notification-dropdown li :hover {
+  background-color: #a4dcbf;
 }
 
 input[type="button"] {
@@ -545,7 +584,7 @@ textarea {
   fill: #A2A2A2;
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   .arrow-icon {
     display: inline-block;
   }
@@ -841,7 +880,7 @@ canvas {
   margin: 5px 0;
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   #new-members .new-members-card,
   #recent-activity .new-members-card {
     -webkit-box-orient: horizontal;
@@ -872,7 +911,7 @@ canvas {
   font-weight: 500;
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   #new-members .new-members-card .type-container,
   #recent-activity .new-members-card .type-container {
     text-align: left;
@@ -890,7 +929,7 @@ canvas {
   width: 90%;
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   #new-members hr,
   #recent-activity hr {
     width: 100%;

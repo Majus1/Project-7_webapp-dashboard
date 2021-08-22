@@ -40,6 +40,53 @@
             </nav>
         </header>
 
+        <div id="notification-dropdown">
+            <ul>
+                <li>
+                    <div class="notification-message">
+                        <p class="notification-heading">Hello I am notification #1</p>
+                        <p class="notification-body">This is the body of the notification so it will be longer than the heading.</p>
+                        <hr>
+                    </div>
+                </li>
+                <li>
+                    <div class="notification-message">
+                        <p class="notification-heading">Hello I am notification #2</p>
+                        <p class="notification-body">This is the body of the notification so it will be longer than the heading.</p>
+                        <hr>
+                    </div>
+                </li>
+                <li>
+                    <div class="notification-message">
+                        <p class="notification-heading">Hello I am notification #3</p>
+                        <p class="notification-body">This is the body of the notification so it will be longer than the heading.</p>
+                        <hr>
+                    </div>
+                </li>
+                <li>
+                    <div class="notification-message">
+                        <p class="notification-heading">Hello I am notification #4</p>
+                        <p class="notification-body">This is the body of the notification so it will be longer than the heading.</p>
+                        <hr>
+                    </div>
+                </li>
+                <li>
+                    <div class="notification-message">
+                        <p class="notification-heading">Hello I am notification #5</p>
+                        <p class="notification-body">This is the body of the notification so it will be longer than the heading.</p>
+                        <hr>
+                    </div>
+                </li>
+                <li>
+                    <div class="notification-message">
+                        <p class="notification-heading">Hello I am notification #6</p>
+                        <p class="notification-body">This is the body of the notification so it will be longer than the heading.</p>
+                        <hr>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
         <!-- The sidebar -->
         <div id="sidebar">
             <a href="#logo"><img src="svgs/home.svg" alt="home" id="home-icn"></a>
@@ -286,6 +333,11 @@
 </html>
 
 <!-- 
-    • Breake up JavaScript
-    • Create desktop ... just started.
+    • Displays at least two notifications at the same time when the user clicks the alerts icon (this could be a pop-up window or dropdown menu).
+------ When I click on the bell I should see either a drop down menu or a little modal window of some kind that shows me 2 notifications at the same time
+
+    • Local storage is used to save the settings. When page is reloaded the settings are remembered.
+------ My settings  (my timezone selection, and any toggle switch changes that I’ve made)  should be saving when I click on the Save button and then refresh the page. Right now nothing is being saved.
+    • When the Cancel button is clicked, local storage is cleared and all toggle switches and timezone settings go back to default values.
+------ Since my changes aren’t being saved - the cancel button is not working. But in order to get the exceeds, you will want this button to reset any changes the user has saved back to the default settings when they click on it.
  -->

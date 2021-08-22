@@ -94,4 +94,18 @@ p.big-number {
     color: $blink_onxy;
     margin: 0;
 }
+.notification-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.notification-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    margin-top: 2px;
+}
 // ::::: Typography styles :::::

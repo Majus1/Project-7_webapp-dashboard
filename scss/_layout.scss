@@ -160,7 +160,7 @@ main {
 
 #new-members {
     // Sets up the new-members area layout
-    @media (min-width: 786px) {
+    @media (min-width: 768px) {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -172,7 +172,7 @@ main {
 
 #recent-activity {
     // Sets up the revent-activity area layout
-    @media (min-width: 786px) {
+    @media (min-width: 768px) {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -184,7 +184,7 @@ main {
 
 #message-user {
     // Sets up the message-user area layout
-    @media (min-width: 786px) {
+    @media (min-width: 768px) {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -196,7 +196,7 @@ main {
 
 #settings {
     // Sets up the settings area layout
-    @media (min-width: 786px) {
+    @media (min-width: 768px) {
         grid-column-start: 1;
         grid-column-end: 3;
         border-left: solid 1px $blink_quick-silver;
@@ -204,6 +204,27 @@ main {
     @media (min-width: 1024px) {
         grid-column-start: 2;
         grid-column-end: 3;
+    }
+}
+
+#notification-dropdown {
+    // Sets the style of the notification dropdown.
+    position: relative;
+    bottom: 1150px;
+    left: 30px;
+    background-color: $blink_platinum;
+    width: 200px;
+    height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    li {
+        margin: 10px 0;
+        p {
+            padding-left: 7px;
+        }
+        :hover {
+            background-color: #a4dcbf;
+        }
     }
 }
 // ::::: Lay Out :::::  
