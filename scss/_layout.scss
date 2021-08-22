@@ -207,24 +207,4 @@ main {
     }
 }
 
-#notification-dropdown {
-    // Sets the style of the notification dropdown.
-    position: relative;
-    bottom: 1150px;
-    left: 30px;
-    background-color: $blink_platinum;
-    width: 200px;
-    height: 200px;
-    overflow-y: auto;
-    text-align: left;
-    li {
-        margin: 10px 0;
-        p {
-            padding-left: 7px;
-        }
-        :hover {
-            background-color: #a4dcbf;
-        }
-    }
-}
 // ::::: Lay Out :::::  

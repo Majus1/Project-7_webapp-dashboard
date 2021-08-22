@@ -438,29 +438,6 @@ main {
   }
 }
 
-#notification-dropdown {
-  position: relative;
-  bottom: 1150px;
-  left: 30px;
-  background-color: #E6E6E6;
-  width: 200px;
-  height: 200px;
-  overflow-y: auto;
-  text-align: left;
-}
-
-#notification-dropdown li {
-  margin: 10px 0;
-}
-
-#notification-dropdown li p {
-  padding-left: 7px;
-}
-
-#notification-dropdown li :hover {
-  background-color: #a4dcbf;
-}
-
 input[type="button"] {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
