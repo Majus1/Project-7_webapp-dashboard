@@ -597,6 +597,10 @@ textarea {
   }
 }
 
+li::marker {
+  display: none;
+}
+
 #dash-tab-bar {
   display: -ms-grid;
   display: grid;

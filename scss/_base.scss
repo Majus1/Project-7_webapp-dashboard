@@ -18,6 +18,10 @@
     }
 }
 
+li::marker {
+    display: none;
+}
+
 #dash-tab-bar {
     // Sets up the dash bar layout
     display: grid;
