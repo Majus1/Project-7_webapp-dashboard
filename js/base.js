@@ -85,8 +85,8 @@ function createHourlyTrafficGraph() {
             }
         }
     });
-};
-createHourlyTrafficGraph()
+}
+createHourlyTrafficGraph();
 
 // ::::: GENERATE Web Traffic graph 2 fnction :::::
 function createDailyTrafficGraph() {
@@ -118,7 +118,7 @@ function createDailyTrafficGraph() {
             }
         }
     });
-};
+}
 
 // ::::: GENERATE Web Traffic graph 3 fnction :::::
 function createWeeklyTrafficGraph() {
@@ -150,7 +150,7 @@ function createWeeklyTrafficGraph() {
             }
         }
     });
-};
+}
 
 // ::::: GENERATE Web Traffic graph 4 fnction :::::
 function createMonthlyTrafficGraph() {
@@ -182,7 +182,7 @@ function createMonthlyTrafficGraph() {
             }
         }
     });
-};
+}
 
 // ::::: GENERATE WEB TRAFFIC GRAPH FUNCTION :::::
 // • When clicked on a tab it will display its coresponding graph.
@@ -217,7 +217,7 @@ chronologicalTabBar.addEventListener("click", (event) => {
             createMonthlyTrafficGraph();
             console.log("you clicked the monthly");
         break;
-    };
+    }
 });
 
 // ::::: GENERATE Mobile Traffic graph 4 fnction :::::
@@ -256,8 +256,8 @@ function createMobileTrafficGraph() {
             }
         }
     });
-};
-createMobileTrafficGraph()
+}
+createMobileTrafficGraph();
 
 // ::::: GENERATE Notification on send button click :::::
 // • Function check the content of the text area and respods.
@@ -283,7 +283,7 @@ messageUserSendBtn.addEventListener("click", (e)=> {
             <p>Message was sent</p>
             <b class ="cancle-button" id="submission-successfull-cancle-button">x</b>
         </div>`;
-    };
+    }
 });
 
 // ::::: ENABLES notification button cancelation :::::
@@ -303,6 +303,6 @@ document.addEventListener("click", (e)=> {
         console.log(e.target);
         messageUserNotificationFail.remove();
         console.log(`Notification now removed`);
-    };
+    }
 });
 // Continue working on the upper event listener .

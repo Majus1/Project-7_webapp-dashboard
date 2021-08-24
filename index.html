@@ -267,13 +267,7 @@
                           </label>
                     </div>
 
-                    <select id="timezone-search" name="timezone-search">
-                        <option value="">Search for time zone</option>
-                        <option value="GMT-12:00">(GMT-12:00) International Date Line West</option>
-                        <option value="GMT-11:00">(GMT-11:00) Midway Island, Samoa</option>
-                        <option value="GMT-10:00">(GMT-10:00) Hawaii</option>
-                        <option value="GMT-09:00">(GMT-09:00) Alaska</option>
-                    </select>
+                    <input type="text" id="timezone-search" name="time-zone-serach" placeholder="Search for timezones">
 
                     <div class="button-area">
                         <input type="button" value="SAVE" id="save-button">
@@ -285,17 +279,6 @@
             </div>
         </main>
     </div>
-    <script type="text/javascript" src="js/base.js"></script>
+    <script src="js/base.js"></script>
 </body>
 </html>
-
-<!-- 
-    • Displays at least two notifications at the same time when the user clicks the alerts icon (this could be a pop-up window or dropdown menu).
------- When I click on the bell I should see either a drop down menu or a little modal window of some kind that shows me 2 notifications at the same time
-            Add some JavaScript to make it target the element and then make drop down apear!
-
-    • Local storage is used to save the settings. When page is reloaded the settings are remembered.
------- My settings  (my timezone selection, and any toggle switch changes that I’ve made)  should be saving when I click on the Save button and then refresh the page. Right now nothing is being saved.
-    • When the Cancel button is clicked, local storage is cleared and all toggle switches and timezone settings go back to default values.
------- Since my changes aren’t being saved - the cancel button is not working. But in order to get the exceeds, you will want this button to reset any changes the user has saved back to the default settings when they click on it.
- -->

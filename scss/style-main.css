@@ -545,7 +545,7 @@ input:checked + .slider:before {
 }
 
 select,
-option
+option,
 input[type="text"] {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
