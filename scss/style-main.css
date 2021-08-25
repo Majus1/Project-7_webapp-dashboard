@@ -727,7 +727,7 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: .7rem;
+  gap: 5px;
   padding: .5rem 0;
 }
 

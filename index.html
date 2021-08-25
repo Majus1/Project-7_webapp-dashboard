@@ -236,13 +236,7 @@
                     </div>
 
                     <!-- continue adding the rest of the form elments -->
-                    <select id="user-search" name="user-search">
-                        <option value="">Search for user</option>
-                        <option value="victoria-Chambers">Victoria Chambers</option>
-                        <option value="dale-byrd">Dale Byrd</option>
-                        <option value="dawn-wood">Dawn Wood</option>
-                        <option value="dan-Oliver">Dan Oliver</option>
-                    </select>
+                    <input type="text" id="user-search" name="user-search" placeholder="Search for user">
                     <textarea id="user-message" name="user-message" placeholder="Message for user"></textarea>
                     <input type="button" value="SEND" id="message-user-send-btn">
                 </div>
@@ -267,7 +261,15 @@
                           </label>
                     </div>
 
-                    <input type="text" id="timezone-search" name="time-zone-serach" placeholder="Search for timezones">
+                    <select id="timezone-search" name="time-zone-serach" placeholder="Search for timezones">
+                        <option value="UTC−10:00">UTC−10:00 — Society Islands, Tuamotus, Austral Islands</option>
+                        <option value="UTC−09:30">UTC−09:30 — Marquesas Islands</option>
+                        <option value="UTC+08:00">UTC+08:00 — Buryatia and Irkutsk Oblast</option>
+                        <option value="UTC−12:00">UTC−12:00 — Baker Island and Howland Island</option>
+                        <option value="UTC+03:00">UTC+03:00 — Syowa Station</option>
+                        <option value="UTC+06:00">UTC+06:00 — Vostok Station</option>
+                        <option value="UTC+12:00">UTC+12:00 — Gilbert Islands</option>
+                    </select>
 
                     <div class="button-area">
                         <input type="button" value="SAVE" id="save-button">
